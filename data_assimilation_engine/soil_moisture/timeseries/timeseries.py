@@ -70,7 +70,7 @@ class SoilMoistureProcessor(Processor):
             return {}
 
         values = self.parser.parse_obs_dataframe(gage_df)
-        return {"ISMN": {"soil moisture": values}}
+        return {"ISMN": {"soil_moisture": values}}
 
 
 class SoilMoisturePlotter(Plotter):
